@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="GridExecution" value="false"/>
+  <listeners>
+    <listener class-name="com.prevail.utilgeneric.Screenshot"/>
+  </listeners>
+  <test thread-count="3" name="Firefoxtest_Test(failed)" parallel="tests">
+    <parameter name="GridURL" value="http://10.27.208.68:4444/wd/hub"/>
+    <parameter name="password" value="Revtech@123"/>
+    <parameter name="broName" value="firefox"/>
+    <parameter name="PlatForm" value="Platform.VISTA"/>
+    <parameter name="extentVal" value="0"/>
+    <parameter name="email" value="prevailrevtech04@gmail.com"/>
+    <parameter name="browserspecfic" value="1"/>
+    <classes>
+      <class name="com.prevail.profile.Login">
+        <methods>
+          <include name="endTest"/>
+          <include name="endTest"/>
+          <include name="initialize"/>
+          <include name="tearDown"/>
+          <include name="TC01_logIn_UI_"/>
+          <include name="extReport"/>
+          <include name="cleanUp"/>
+          <include name="TC02_logIn_ForgotPassword"/>
+        </methods>
+      </class> <!-- com.prevail.profile.Login -->
+    </classes>
+  </test> <!-- Firefoxtest_Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

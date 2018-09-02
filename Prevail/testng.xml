@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3">
+
+	  
+  <listeners>
+     <listener class-name="com.prevail.utilgeneric.Screenshot"/>
+<!-- <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  	 <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/> -->
+  </listeners> 
+   
+       
+    <parameter name="GridExecution" value="false"/>
+    
+	<!--
+	
+	<test name="iPad_Test">
+	  <parameter name="broName" value="iPad"/>
+	  <parameter name="PlatForm" value="Platform.VISTA"/>
+	  <parameter name="GridURL" value="http://10.27.208.11:5555/wd/hub"/>
+	  <parameter name="extentVal" value="0"/>
+	  <parameter name="email" value="prevailrevtech02@gmail.com"/>
+	  <parameter name="password" value="Revtech@123"/>
+		<classes>
+			<class name="com.prevail.profile.Address"/>
+		</classes>
+	</test>
+	
+	<test name="iPhone_Test">
+	  <parameter name="broName" value="iPhone"/>
+	  <parameter name="PlatForm" value="Platform.VISTA"/>
+	  <parameter name="GridURL" value="http://10.27.208.11:5555/wd/hub"/>
+	  <parameter name="extentVal" value="0"/>
+	  <parameter name="email" value="prevailrevtech03@gmail.com"/>
+	  <parameter name="password" value="Revtech@123"/>
+		<classes>
+			<class name="com.prevail.profile.Address"/>
+		</classes>
+	</test>
+
+ <test name="ie_Test">
+ <parameter name="broName" value="ie"/>
+ <parameter name="PlatForm" value="Platform.VISTA"/>
+ <parameter name="GridURL" value="http://10.27.208.68:4444/wd/hub"/>
+ <parameter name="extentVal" value="0"/>
+ <parameter name="email" value="prevailrevtech07@gmail.com"/>
+ <parameter name="password" value="Revtech@123"/>
+<classes>
+	<class name="com.cbk.profile.Login"/>
+</classes>
+ </test> 
+ 
+  <test name="ie_Test">
+ <parameter name="broName" value="ie"/>
+ <parameter name="PlatForm" value="Platform.VISTA"/>
+ <parameter name="GridURL" value="http://10.27.208.68:4444/wd/hub"/>
+ <parameter name="extentVal" value="0"/>
+ <parameter name="email" value="prevailrevtech07@gmail.com"/>
+ <parameter name="password" value="Revtech@123"/>
+<classes>
+	<class name="com.cbk.profile.Login"/>
+</classes>
+ </test> -->	
+
+<!-- <test name="chrome_Test">
+
+<parameter name="broName" value="Chrome"/>
+<parameter name="PlatForm" value="Platform.VISTA"/>
+<parameter name="GridURL" value="http://10.27.208.68:4444/wd/hub"/>
+<parameter name="extentVal" value="0"/>
+<parameter name="browserspecfic" value="1"/>
+<parameter name="email" value="prevailrevtech04@gmail.com"/>
+<parameter name="password" value="Revtech@123"/>
+  
+<classes>
+	<class name="com.prevail.profile.Login"/>
+</classes>
+	
+</test>	
+ -->
+<test name="Firefoxtest_Test">
+<parameter name="broName" value="firefox"/>
+<parameter name="PlatForm" value="Platform.VISTA"/>
+<parameter name="GridURL" value="http://10.27.208.68:4444/wd/hub"/>
+<parameter name="extentVal" value="0"/>
+<parameter name="browserspecfic" value="1"/>
+<parameter name="email" value="prevailrevtech04@gmail.com"/>
+<parameter name="password" value="Revtech@123"/>
+  
+<classes>
+	<class name="com.prevail.profile.Login"/>
+</classes>
+	
+</test>			 
+
+<!--
+
+<test name="Firefox_Test">
+
+<parameter name="broName" value="firefox"/>
+<parameter name="PlatForm" value="Platform.VISTA"/>
+<parameter name="GridURL" value="http://10.27.208.68:4444/wd/hub"/>
+<parameter name="extentVal" value="0"/>
+<parameter name="browserspecfic" value="1"/>
+<parameter name="email" value="prevailrevtech04@gmail.com"/>
+<parameter name="password" value="Revtech@123"/>
+  
+<classes>
+	<class name="com.cbk.profile.Login"/> 
+</classes>
+	
+</test>	
+
+<test name="AndroidPhone_Test">
+  <parameter name="broName" value="Android Phone"/>
+    <parameter name="Execution" value="Android Phone"/>
+  <parameter name="PlatForm" value="Platform.VISTA"/>
+  <parameter name="GridURL" value="http://10.27.208.11:5555/wd/hub"/>
+  <parameter name="extentVal" value="0"/>
+  <parameter name="email" value="prevailrevtech01@gmail.com"/>
+  <parameter name="password" value="Revtech@123"/>
+	<classes>
+		<class name="com.cbk.profile.Login"/>
+	</classes>
+</test> 
+ 
+
+
+ <test name="AndroidTab_Test">
+	  <parameter name="broName" value="Android Tab"/>
+	  <parameter name="Execution" value="Android Tab"/>
+	  <parameter name="PlatForm" value="Platform.VISTA"/>
+	  <parameter name="GridURL" value="http://10.27.208.11:5555/wd/hub"/>
+	  <parameter name="extentVal" value="0"/>
+	  <parameter name="email" value="prevailrevtech06@gmail.com"/>
+	  <parameter name="password" value="Revtech@123"/>
+		<classes>
+			<class name="com.cbk.profile.Login"/>
+		</classes>
+</test> 
+
+ <test name="Chrome_Test">
+  <parameter name="broName" value="chrome"/>
+  <parameter name="PlatForm" value="Platform.VISTA"/>
+  <parameter name="GridURL" value="http://10.27.208.11:5555/wd/hub"/>
+  <parameter name="extentVal" value="0"/>
+  <parameter name="dynamicNum" value="1"/>
+  <parameter name="email" value="prevailrevtech05@gmail.com"/>
+  <parameter name="password" value="Revtech@123"/>
+	<classes>
+		<class name="com.cbk.profile.Login"/>
+	</classes>
+</test> 	
+
+
+
+	   
+
+ <test name="AndroidTab_Test">
+	  <parameter name="broName" value="Android Tab"/>
+	  <parameter name="Execution" value="Android Tab"/>
+	  <parameter name="PlatForm" value="Platform.VISTA"/>
+	  <parameter name="GridURL" value="http://10.27.208.11:5555/wd/hub"/>
+	  <parameter name="extentVal" value="0"/>
+	  <parameter name="email" value="prevailrevtech06@gmail.com"/>
+	  <parameter name="password" value="Revtech@123"/>
+		<classes>
+			<class name="com.prevail.profile.Address"/>
+		</classes>
+	</test> 
+	
+	<test name="ie_Test">
+	  <parameter name="broName" value="ie"/>
+	  <parameter name="PlatForm" value="Platform.VISTA"/>
+	  <parameter name="GridURL" value="http://10.27.208.11:5555/wd/hub"/>
+	  <parameter name="extentVal" value="0"/>
+	  <parameter name="email" value="prevailrevtech07@gmail.com"/>
+	  <parameter name="password" value="Revtech@123"/>
+		<classes>
+			<class name="com.prevail.profile.Address"/>
+		</classes>
+	</test> 
+	
+	<test name="Edge_Test">
+	  <parameter name="broName" value="ie"/>
+	  <parameter name="PlatForm" value="Platform.WIN10"/>
+	  <parameter name="GridURL" value="http://10.27.208.11:5555/wd/hub"/>
+	  <parameter name="extentVal" value="0"/>
+	  <parameter name="email" value="prevailrevtech08@gmail.com"/>
+	  <parameter name="password" value="Revtech@123"/>
+		<classes>
+			<class name="com.prevail.profile.Address"/>
+		</classes>
+	</test> 
+	 -->
+	 
+	 
+<!-- 	   	<groups>
+  	<run>
+  		<include name="Regression"/>
+  		 <exclude name="sanity"/>
+  	</run>
+  	</groups> -->
+	 
+</suite>
+

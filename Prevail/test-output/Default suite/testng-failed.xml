@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.prevail.profile.Login">
+        <methods>
+          <include name="endTest"/>
+          <include name="endTest"/>
+          <include name="initialize"/>
+          <include name="tearDown"/>
+          <include name="TC01_logIn_UI_"/>
+          <include name="extReport"/>
+          <include name="cleanUp"/>
+          <include name="TC02_logIn_ForgotPassword"/>
+        </methods>
+      </class> <!-- com.prevail.profile.Login -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
